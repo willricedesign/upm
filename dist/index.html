@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#2F3BA2">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles/main.css">
+
+</head>
+
+<body>
+
+  <!--
+  A toast will disappear after X seconds (temporary)
+  or stay until dismissed(permanent).
+
+  Toast styling: info (default), warning, success or danger
+  -->
+
+  <div class="toast toast--info toast--temporary toast--permanent">
+
+    <!-- Images are option. Images can be large (48px) or small(24px) -->
+    <div class="toast-image toast-image--large"></div>
+
+
+    <div class="toast-content">
+      <!-- Headline is required-->
+      <h1 class="toast-headline">Manage your course on the go</h1>
+      <!-- Text is optional-->
+      <p class="toast-text">Get the Udemy instructor app today</p>
+      <!-- Button is optional -->
+      <button class="toast-button">Download</button>
+    </div>
+
+    <!-- Close button is required -->
+    <div class="toast-close"></div>
+
+  </div>
+
+  <!-- build:js scripts/main.min.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>

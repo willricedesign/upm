@@ -1,0 +1,96 @@
+
+/*
+Note: any .css or .scss files included in the 'styles' directory
+will be correctly compiled during `gulp serve` and `gulp`
+ */
+
+
+// Mixins
+
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+ //======== Variables ========
+
+
+// Udemy Color
+$color-danger-darker: #521822;
+$color-danger-dark: #992337;
+$color-danger: #EC5252;
+$color-danger-light: #FF7373;
+$color-danger-lighter: #FAEBEB;
+$color-green-darker: #004025;
+$color-green-dark: #208058;
+$color-green: #46C28E;
+$color-green-light: #85EDC2;
+$color-green-lighter: #E9F7F1;
+$color-midnight-dark: #14171C;
+$color-midnight: #29303B;
+$color-midnight-light: #505763;
+$color-midnight-lighter: #686F7A;
+$color-midnight-lightest: #A1A7B3;
+$color-orange-darker: #4D2000;
+$color-orange-dark: #B35A1B;
+$color-orange: #F59C49;
+$color-orange-light: #FFC48C;
+$color-orange-lighter: #fff2e5;
+$color-primary-darker: #521822;
+$color-primary-dark: #992337;
+$color-primary: #EC5252;
+$color-primary-light: #FF7373;
+$color-primary-lighter: #FAEBEB;
+$color-purple-darker: #430E32;
+$color-purple-dark: #6E1A52;
+$color-purple: #853C6C;
+$color-purple-light: #CC87B4;
+$color-purple-lighter: #F7EBF3;
+$color-rain-dark: #CACBCC;
+$color-rain: #DEDFE0;
+$color-rain-light: #E8E9EB;
+$color-rain-lighter: #F2F3F5;
+$color-rain-lightest: #F7F8FA;
+$color-secondary-darker: #003440;
+$color-secondary-dark: #00576B;
+$color-secondary: #007791;
+$color-secondary-light: #76C5D6;
+$color-secondary-lighter: #E6F2F5;
+$color-yellow-darker: #4D3400;
+$color-yellow-dark: #9C6D09;
+$color-yellow: #F4C150;
+$color-yellow-light: #FFE48C;
+$color-yellow-lighter: #FAF8E1;
+$color-white: #FFF;
+
+//========  Style ========
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
