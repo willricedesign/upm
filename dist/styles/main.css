@@ -5,6 +5,7 @@ will be correctly compiled during `gulp serve` and `gulp`
 html, body {
   background-color: #FFF;
   box-sizing: border-box;
+  display: flex;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
@@ -13,6 +14,29 @@ html, body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
   width: 100%; }
+
+.udemy-mockup {
+  align-self: center;
+  background-color: #FFF;
+  background-image: url("../images/udemy-mockup.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0 0px 48px -4px rgba(20, 23, 28, 0.2);
+  box-sizing: border-box;
+  display: flex;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding: 0 auto;
+  width: 1008px; }
+
+.toast-container {
+  position: absolute;
+  max-height: 500px;
+  top: 64px;
+  right: 0; }
 
 .toast {
   align-items: flex-start;
