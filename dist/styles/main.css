@@ -3,13 +3,110 @@ Note: any .css or .scss files included in the 'styles' directory
 will be correctly compiled during `gulp serve` and `gulp`
  */
 html, body {
-  font-family: 'Open Sans', sans-serif;
+  background-color: #FFF;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
   font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: white;
-  width: 100%;
   height: 100%;
-  box-sizing: border-box; }
+  width: 100%; }
+
+.toast {
+  align-items: flex-start;
+  background-color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 1px rgba(20, 23, 28, 0.15);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 288px;
+  margin: 16px;
+  padding: 16px;
+  position: relative; }
+  .toast:before {
+    background-color: #007791;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 2px; }
+  .toast:hover {
+    background-color: #F7F8FA; }
+
+.toast--info:before {
+  background-color: #007791; }
+
+.toast--success:before {
+  background-color: #46C28E; }
+
+.toast-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  flex: 0 0 auto;
+  margin-right: 16px; }
+
+.toast-image--large {
+  background-image: url("../images/apple-logo.png");
+  height: 48px;
+  width: 48px; }
+
+.toast-image--small {
+  align-self: center;
+  background-image: url("../images/icon-pos.png");
+  height: 20px;
+  width: 20px; }
+
+.toast-content {
+  align-self: center;
+  flex-grow: 1;
+  margin-right: 16px; }
+
+.toast-headline {
+  color: #29303B;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0; }
+
+.toast-text {
+  color: #505763;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 4px 0 0 0;
+  padding: 0; }
+
+.toast-button {
+  background: none;
+  border: 1px solid #007791;
+  border-radius: 2px;
+  box-sizing: content-box;
+  color: #007791;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  height: 34px;
+  line-height: 1.4;
+  margin: 8px 0 0 0;
+  padding: 0 12px;
+  text-align: center; }
+
+.toast-close {
+  background-image: url("../images/icon-close.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  flex: 0 0 auto;
+  height: 32px;
+  width: 32px; }

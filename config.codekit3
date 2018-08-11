@@ -30,11 +30,43 @@
 		"oAP": "\/dist\/humans.txt",
 		"oF": 0
 		},
+	"\/app\/images\/apple-logo.png": {
+		"ft": 32768,
+		"iS": 2955,
+		"oA": 0,
+		"oAP": "\/dist\/images\/apple-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/app\/images\/hamburger.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
 		"oAP": "\/dist\/images\/hamburger.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/app\/images\/icon-close.png": {
+		"ft": 32768,
+		"iS": 1384,
+		"oA": 0,
+		"oAP": "\/dist\/images\/icon-close.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/images\/icon-close.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/dist\/images\/icon-close.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 3758088159,
@@ -67,6 +99,17 @@
 		"iS": 572,
 		"oA": 0,
 		"oAP": "\/dist\/images\/icon-perf.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/images\/icon-pos.png": {
+		"ft": 32768,
+		"iS": 1967,
+		"oA": 0,
+		"oAP": "\/dist\/images\/icon-pos.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
