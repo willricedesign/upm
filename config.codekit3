@@ -73,16 +73,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/app\/images\/icon-close.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/dist\/images\/icon-close.svg",
-		"oF": 0,
-		"opt": 1,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/app\/images\/icon-comms.png": {
 		"ft": 32768,
 		"iS": 835,
@@ -110,6 +100,17 @@
 		"iS": 1613,
 		"oA": 0,
 		"oAP": "\/dist\/images\/icon-danger.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/images\/icon-large-rocket.png": {
+		"ft": 32768,
+		"iS": 5538,
+		"oA": 0,
+		"oAP": "\/dist\/images\/icon-large-rocket.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -160,55 +161,33 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/app\/images\/touch\/apple-touch-icon.png": {
-		"ft": 32768,
-		"iS": 2408,
-		"oA": 0,
-		"oAP": "\/dist\/images\/touch\/apple-touch-icon.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/app\/images\/touch\/chrome-touch-icon-192x192.png": {
-		"ft": 32768,
-		"iS": 1668,
-		"oA": 0,
-		"oAP": "\/dist\/images\/touch\/chrome-touch-icon-192x192.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/app\/images\/touch\/icon-128x128.png": {
-		"ft": 32768,
-		"iS": 2108,
-		"oA": 0,
-		"oAP": "\/dist\/images\/touch\/icon-128x128.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/app\/images\/touch\/ms-touch-icon-144x144-precomposed.png": {
-		"ft": 32768,
-		"iS": 1093,
-		"oA": 0,
-		"oAP": "\/dist\/images\/touch\/ms-touch-icon-144x144-precomposed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
 	"\/app\/images\/udemy-logo.png": {
 		"ft": 32768,
 		"iS": 4863,
 		"oA": 0,
 		"oAP": "\/dist\/images\/udemy-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/images\/udemy-mockup--mobile.png": {
+		"ft": 32768,
+		"iS": 138270,
+		"oA": 0,
+		"oAP": "\/dist\/images\/udemy-mockup--mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/images\/udemy-mockup-clp--mobile.png": {
+		"ft": 32768,
+		"iS": 73067,
+		"oA": 0,
+		"oAP": "\/dist\/images\/udemy-mockup-clp--mobile.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -231,6 +210,17 @@
 		"iS": 337526,
 		"oA": 0,
 		"oAP": "\/dist\/images\/udemy-mockup-instructor.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/images\/udemy-mockup-player--mobile.png": {
+		"ft": 32768,
+		"iS": 73067,
+		"oA": 0,
+		"oAP": "\/dist\/images\/udemy-mockup-player--mobile.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -526,7 +516,7 @@
 	"creationDate": 544891940,
 	"displayValue": "udemy-messaging",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "\/app\/images\/touch\/apple-touch-icon.png",
+	"iconImageName": "meme-leo",
 	"iconImageWasSetByUser": 0,
 	"lastBuiltDate": 544891962
 	},

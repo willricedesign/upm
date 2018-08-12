@@ -23,19 +23,28 @@
 <body>
 
   <div class="proto-controls">
-    <button type="button" class="proto-button proto-button-create">Show/hide large toast</button>
-    <button type="button" class="proto-button proto-button-compact">Toggle large text</button>
-    <button type="button" class="proto-button proto-button-show">Load all toast types</button>
-    <button type="button" class="proto-button proto-button-bg">Cycle prototype backgrounds</button>
+    <button type="button" class="proto-button proto-button--legal">Load legal toast</button>
+    <button type="button" class="proto-button proto-button--danger">Load sever error</button>
+    <button type="button" class="proto-button proto-button--success">Load temporary success message</button>
+    <button type="button" class="proto-button proto-button--learn">Load temporary learn message</button>
+    <!-- <button type="button" class="proto-button proto-button--compact">Toggle large toasts</button> -->
+    <button type="button" class="proto-button proto-button--location">Toggle toast location</button>
+    <button type="button" class="proto-button proto-button--mobile">Toggle mobile</button>
+    <button type="button" class="proto-button proto-button--bg">Change page (4 total)</button>
+    <button type="button" class="proto-button proto-button--show">Load all toasts</button>
+    <button type="button" class="proto-button proto-button--clear">Clear all toasts</button>
+    <button type="button" class="proto-button proto-button--cookies">Load cookie message</button>
   </div>
 
-  <div class="udemy-mockup">
+  <div class="udemy-mockup udemy-mockup--home toast-variant--compact toast-variant--bottom">
 
     <div class="messaging-container">
 
-      <div class="toast-container toast-variant--compact toast-variant--bottom">
+      <div class="toast-container ">
 
-        <div class="toast toast--terms toast--hidden toast--removed">
+        <!--  Toast (Legal Notice) : Custom Style, Large Image, Long String   -->
+
+        <div class="toast toast--legal toast--hidden toast--removed">
           <div class="toast-image toast-image--large"></div>
           <div class="toast-content">
             <h1 class="toast-headline">Our terms and conditions have changed.</h1>
@@ -45,8 +54,17 @@
           </div>
         </div>
 
+        <!--  Toast (Critical Error) : Danger Style, Large Image, Long String   -->
 
-        <!--### Toast : Large Image, Text, Button ###-->
+        <div class="toast toast--danger toast--hidden toast--removed">
+          <div class="toast-image toast-image--large"></div>
+          <div class="toast-content">
+            <h1 class="toast-headline">Our servers have stopped responding.</h1>
+            <button type="button" class="toast-button">Reload page</button>
+          </div>
+        </div>
+
+        <!--  Toast : Large Image, Text, Button  -->
 
         <!--
         A toast will disappear after X seconds (temporary)
@@ -57,7 +75,7 @@
 
         <div class="toast toast--info toast--hidden toast--removed">
 
-          <!-- Images are option. Images can be large (48px) or small(24px) -->
+          <!-- Images are required. Images can be large (48px) or small(24px) -->
           <div class="toast-image toast-image--large"></div>
 
 
@@ -76,7 +94,19 @@
 
         </div>
 
-        <!--### Toast : Large Image, Text ###-->
+        <!--  Keep Learning Toast : Large Image, Text  -->
+
+        <div class="toast toast--info toast--learn toast--hidden toast--removed">
+          <div class="toast-image toast-image--large"></div>
+          <div class="toast-content">
+            <h1 class="toast-headline">Keep learning!</h1>
+            <p class="toast-text">You’ve completed 50% of this course. Great job!</p>
+          </div>
+          <div class="toast-close"></div>
+        </div>
+
+
+        <!--  Toast : Large Image, Text  -->
 
         <div class="toast toast--info toast--hidden toast--removed">
           <div class="toast-image toast-image--large"></div>
@@ -87,7 +117,7 @@
           <div class="toast-close"></div>
         </div>
 
-        <!--### Toast : Large Image, Button ###-->
+        <!--  Toast : Large Image, Button  -->
 
         <div class="toast toast--info toast--hidden toast--removed">
           <div class="toast-image toast-image--large"></div>
@@ -98,7 +128,7 @@
           <div class="toast-close"></div>
         </div>
 
-        <!--### Toast : Large Image ###-->
+        <!--  Toast : Large Image  -->
 
         <div class="toast toast--info toast--hidden toast--removed">
           <div class="toast-image toast-image--large"></div>
@@ -108,46 +138,26 @@
           <div class="toast-close"></div>
         </div>
 
-        <!--### Toast (Critical Error) : Danger Style, Large Image, Long String  ###-->
+        <!--  Toast : Small Image   -->
 
-        <div class="toast toast--danger toast--hidden toast--removed">
-          <div class="toast-image toast-image--large"></div>
+        <div class="toast toast--success toast--hidden toast--removed">
+          <div class="toast-image toast-image--small"></div>
           <div class="toast-content">
-            <h1 class="toast-headline">Our servers have stopped responding.</h1>
-            <button type="button" class="toast-button">Reload page</button>
+            <h1 class="toast-headline">User group changed</h1>
           </div>
+          <div class="toast-close"></div>
         </div>
 
 
-        <!--### Toast : Small Image, Long String  ###-->
+        <!--  Toast : Small Image, Long String   -->
 
         <div class="toast toast--large toast--success toast--hidden toast--removed">
           <div class="toast-image toast-image--small"></div>
           <div class="toast-content">
-            <h1 class="toast-headline">User group successfully changed</h1>
+            <h1 class="toast-headline">User group has been successfully changed</h1>
           </div>
           <div class="toast-close"></div>
         </div>
-
-        <!--### Toast : Small Image  ###-->
-
-        <div class="toast toast--success toast--hidden toast--removed">
-          <div class="toast-image toast-image--small"></div>
-          <div class="toast-content">
-            <h1 class="toast-headline">User group changed</h1>
-          </div>
-          <div class="toast-close"></div>
-        </div>
-
-        <!--### Toast : Text only ###-->
-
-        <div class="toast toast--success toast--hidden toast--removed">
-          <div class="toast-content">
-            <h1 class="toast-headline">User group changed</h1>
-          </div>
-          <div class="toast-close"></div>
-        </div>
-
 
 
 
@@ -155,7 +165,7 @@
       </div>
 
       <div class="cookie-message">
-        <p>We use cookies to provide a personalised experience and to keep your data safe. <a href=#>Learn more</a></p>
+        <p>We use cookies to provide a secure and personalised experience. <a href=#>Learn more</a></p>
         <div class="cookie-message-close">
         </div>
       </div>
@@ -168,7 +178,7 @@
 
 
   <!-- build:js scripts/main.min.js -->
-  <script src="scripts/main.js"></script>
+  <script src="./scripts/main.js"></script>
   <!-- endbuild -->
 
 </body>

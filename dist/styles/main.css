@@ -18,7 +18,6 @@ html, body {
 .udemy-mockup {
   align-self: center;
   background-color: #FFF;
-  background-image: url("../images/udemy-mockup.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,20 +26,33 @@ html, body {
   display: flex;
   height: 600px;
   margin: 0 auto;
+  max-width: 1008px;
   overflow: hidden;
   position: relative;
   padding: 0 auto;
-  max-width: 1008px;
   width: 100%; }
+
+.udemy-mockup--mobile {
+  height: 568px;
+  width: 320px; }
 
 .udemy-mockup--home {
   background-image: url("../images/udemy-mockup.png"); }
 
+.udemy-mockup--home.udemy-mockup--mobile {
+  background-image: url("../images/udemy-mockup--mobile.png"); }
+
 .udemy-mockup--clp {
   background-image: url("../images/udemy-mockup-clp.png"); }
 
+.udemy-mockup--clp.udemy-mockup--mobile {
+  background-image: url("../images/udemy-mockup-clp--mobile.png"); }
+
 .udemy-mockup--player {
   background-image: url("../images/udemy-mockup-player.png"); }
+
+.udemy-mockup--player.udemy-mockup--mobile {
+  background-image: url("../images/udemy-mockup-player--mobile.png"); }
 
 .udemy-mockup--instructor {
   background-image: url("../images/udemy-mockup-instructor.png"); }
@@ -48,7 +60,7 @@ html, body {
 .proto-controls {
   height: auto;
   padding: 8px;
-  position: fixed;
+  position: absolute;
   width: 100px;
   z-index: 1000; }
 
@@ -66,24 +78,30 @@ html, body {
   border-radius: 4px;
   width: 100%; }
   .proto-button:hover {
-    color: pink; }
+    color: #FF7373; }
 
 .messaging-container {
+  box-sizing: border-box;
   display: flex;
-  width: 100%;
-  height: 100%; }
+  flex-direction: column;
+  height: 100%;
+  padding-top: 68px;
+  position: absolute;
+  width: 100%; }
+  .udemy-mockup--mobile .messaging-container {
+    padding-top: 52px; }
 
 .cookie-message {
-  background-color: #007791;
-  bottom: 0;
+  background-color: #14171C;
   box-sizing: border-box;
   color: #FFF;
+  display: flex;
   font-size: 14px;
-  padding: 0 64px 0 16px;
-  position: absolute;
+  padding: 4px 16px;
   width: 100%;
   font-weight: 500; }
   .cookie-message p {
+    flex-grow: 1;
     width: auto; }
   .cookie-message a {
     color: white;
@@ -96,39 +114,39 @@ html, body {
   transform: translateY(300px);
   transition: opacity 200ms 50ms, transform 500ms ease-in-out; }
 
+.cookie-message--removed {
+  display: none; }
+
 .cookie-message-close {
   background-image: url("../images/icon-close-white.png");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 100%;
   cursor: pointer;
+  flex: 0 0 auto;
   height: 32px;
-  position: absolute;
-  top: 8px;
-  right: 16px;
+  margin-top: 8px;
   width: 32px; }
 
 .toast-container {
+  align-self: flex-end;
+  box-sizing: border-box;
   display: flex;
+  flex: 1;
+  flex-grow: 1;
   flex-direction: column;
-  height: 100%;
-  max-height: 480px;
-  margin-top: 84px;
   overflow: hidden;
-  padding: 16px;
-  position: absolute;
-  right: 0; }
-
-.toast-variant--bottom {
-  bottom: 48px;
-  flex-direction: column-reverse;
-  margin-top: 0; }
+  padding: 16px; }
+  .toast-variant--bottom .toast-container {
+    flex-direction: column-reverse; }
+  .udemy-mockup--mobile .toast-container {
+    width: 100%; }
 
 .toast {
   align-items: flex-start;
   background-color: #FFF;
   border-radius: 4px;
-  box-shadow: 0 2px 5px 1px rgba(20, 23, 28, 0.15);
+  box-shadow: 0 2px 4px 1px rgba(20, 23, 28, 0.3);
   box-sizing: border-box;
   cursor: pointer;
   display: flex;
@@ -136,10 +154,10 @@ html, body {
   flex-direction: row;
   flex-wrap: nowrap;
   margin: 0 0 16px 0;
+  width: 340px;
   padding: 16px;
   position: relative;
-  transition: opacity 200ms 50ms, transform 250ms ease-in-out;
-  width: 288px; }
+  transition: opacity 200ms 50ms, transform 250ms ease-in-out; }
   .toast:before {
     background-color: #007791;
     border-top-left-radius: 4px;
@@ -154,6 +172,12 @@ html, body {
     background-color: #F7F8FA; }
   .toast-variant--bottom .toast {
     margin: 16px 0 0 0; }
+  .toast-variant--compact .toast {
+    width: 288px; }
+  .udemy-mockup--mobile .toast {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%; }
 
 .toast-image {
   background-color: none;
@@ -257,17 +281,20 @@ html, body {
   .toast--danger .toast-image {
     background-image: url("../images/icon-danger.png"); }
 
-.toast--terms:before {
+.toast--legal:before {
   background-color: #EC5252; }
 
-.toast--terms .toast-button--primary {
+.toast--legal .toast-button--primary {
   background-color: #007791;
   color: #FFF;
   font-size: 14px;
   padding: 4px 16px; }
 
-.toast--terms .toast-button--secondary {
+.toast--legal .toast-button--secondary {
   border: none; }
 
-.toast--terms .toast-image {
+.toast--legal .toast-image {
   background-image: url("../images/udemy-symbol.png"); }
+
+.toast--learn .toast-image {
+  background-image: url("../images/icon-large-rocket.png"); }
