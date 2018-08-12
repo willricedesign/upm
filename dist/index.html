@@ -22,93 +22,143 @@
 
 <body>
 
+  <div class="proto-controls">
+    <button type="button" class="proto-button proto-button-create">Show/hide large toast</button>
+    <button type="button" class="proto-button proto-button-compact">Toggle large text</button>
+    <button type="button" class="proto-button proto-button-show">Load all toast types</button>
+    <button type="button" class="proto-button proto-button-bg">Cycle prototype backgrounds</button>
+  </div>
+
   <div class="udemy-mockup">
 
-    <div class="toast-container">
+    <div class="messaging-container">
 
+      <div class="toast-container toast-variant--compact toast-variant--bottom">
 
-      <!--### Toast : Large Image, Text, Button ###-->
-
-      <!--
-      A toast will disappear after X seconds (temporary)
-      or stay until dismissed(permanent).
-
-      Toast styling: info (default), warning, success or danger
-      -->
-
-      <div class="toast toast--info toast--temporary toast--permanent">
-
-        <!-- Images are option. Images can be large (48px) or small(24px) -->
-        <div class="toast-image toast-image--large"></div>
-
-
-        <div class="toast-content">
-          <!-- Headline is required-->
-          <h1 class="toast-headline">Manage your course on the go</h1>
-          <!-- Text is optional-->
-          <p class="toast-text">Get the Udemy instructor app today</p>
-          <!-- Button is optional -->
-          <button class="toast-button">Download</button>
+        <div class="toast toast--terms toast--hidden toast--removed">
+          <div class="toast-image toast-image--large"></div>
+          <div class="toast-content">
+            <h1 class="toast-headline">Our terms and conditions have changed.</h1>
+            <p class="toast-text">By using this site, you agree to the updated terms.</p>
+            <button type="button" class="toast-button toast-button--primary">I agree</button>
+            <button type="button" class="toast-button toast-button--secondary">Learn more</button>
+          </div>
         </div>
 
-        <!-- Close button is required -->
-        <div class="toast-close"></div>
+
+        <!--### Toast : Large Image, Text, Button ###-->
+
+        <!--
+        A toast will disappear after X seconds (temporary)
+        or stay until dismissed(permanent).
+
+        Toast styling: info (default), warning, success or danger
+        -->
+
+        <div class="toast toast--info toast--hidden toast--removed">
+
+          <!-- Images are option. Images can be large (48px) or small(24px) -->
+          <div class="toast-image toast-image--large"></div>
+
+
+          <div class="toast-content">
+            <!-- Headline is required-->
+            <h1 class="toast-headline">Manage your course on the go</h1>
+            <!-- Text is optional-->
+            <p class="toast-text">Get the Udemy instructor app today</p>
+            <!-- Button is optional -->
+            <button type="button" class="toast-button">Download</button>
+          </div>
+
+          <!-- Close button is required, EXCEPT for situations where the
+          user MUST take action (e.g. reload the page due to server error)  -->
+          <div class="toast-close"></div>
+
+        </div>
+
+        <!--### Toast : Large Image, Text ###-->
+
+        <div class="toast toast--info toast--hidden toast--removed">
+          <div class="toast-image toast-image--large"></div>
+          <div class="toast-content">
+            <h1 class="toast-headline">Manage your course on the go</h1>
+            <p class="toast-text">Get the Udemy instructor app today</p>
+          </div>
+          <div class="toast-close"></div>
+        </div>
+
+        <!--### Toast : Large Image, Button ###-->
+
+        <div class="toast toast--info toast--hidden toast--removed">
+          <div class="toast-image toast-image--large"></div>
+          <div class="toast-content">
+            <h1 class="toast-headline">Download the Instructor app today!</h1>
+            <button type="button" class="toast-button">Download</button>
+          </div>
+          <div class="toast-close"></div>
+        </div>
+
+        <!--### Toast : Large Image ###-->
+
+        <div class="toast toast--info toast--hidden toast--removed">
+          <div class="toast-image toast-image--large"></div>
+          <div class="toast-content">
+            <h1 class="toast-headline">Download the Instructor app today!</h1>
+          </div>
+          <div class="toast-close"></div>
+        </div>
+
+        <!--### Toast (Critical Error) : Danger Style, Large Image, Long String  ###-->
+
+        <div class="toast toast--danger toast--hidden toast--removed">
+          <div class="toast-image toast-image--large"></div>
+          <div class="toast-content">
+            <h1 class="toast-headline">Our servers have stopped responding.</h1>
+            <button type="button" class="toast-button">Reload page</button>
+          </div>
+        </div>
+
+
+        <!--### Toast : Small Image, Long String  ###-->
+
+        <div class="toast toast--large toast--success toast--hidden toast--removed">
+          <div class="toast-image toast-image--small"></div>
+          <div class="toast-content">
+            <h1 class="toast-headline">User group successfully changed</h1>
+          </div>
+          <div class="toast-close"></div>
+        </div>
+
+        <!--### Toast : Small Image  ###-->
+
+        <div class="toast toast--success toast--hidden toast--removed">
+          <div class="toast-image toast-image--small"></div>
+          <div class="toast-content">
+            <h1 class="toast-headline">User group changed</h1>
+          </div>
+          <div class="toast-close"></div>
+        </div>
+
+        <!--### Toast : Text only ###-->
+
+        <div class="toast toast--success toast--hidden toast--removed">
+          <div class="toast-content">
+            <h1 class="toast-headline">User group changed</h1>
+          </div>
+          <div class="toast-close"></div>
+        </div>
+
+
+
+
 
       </div>
 
-      <!--### Toast : Large Image, Text ###-->
-
-      <div class="toast toast--info toast--temporary toast--permanent">
-        <div class="toast-image toast-image--large"></div>
-        <div class="toast-content">
-          <h1 class="toast-headline">Manage your course on the go</h1>
-          <p class="toast-text">Get the Udemy instructor app today</p>
+      <div class="cookie-message">
+        <p>We use cookies to provide a personalised experience and to keep your data safe. <a href=#>Learn more</a></p>
+        <div class="cookie-message-close">
         </div>
-        <div class="toast-close"></div>
-
       </div>
-
-      <!--### Toast : Large Image ###-->
-
-      <div class="toast toast--info toast--temporary toast--permanent">
-        <div class="toast-image toast-image--large"></div>
-        <div class="toast-content">
-          <h1 class="toast-headline">Download the Instructor app today!</h1>
-        </div>
-        <div class="toast-close"></div>
-
-      </div>
-
-      <!--### Toast : Small Image, Long String  ###-->
-
-      <div class="toast toast--large toast--success toast--temporary toast--permanent">
-        <div class="toast-image toast-image--small"></div>
-        <div class="toast-content">
-          <h1 class="toast-headline">User group successfully changed</h1>
-        </div>
-        <div class="toast-close"></div>
-      </div>
-
-      <!--### Toast : Small Image  ###-->
-
-      <div class="toast toast--success toast--temporary toast--permanent">
-        <div class="toast-image toast-image--small"></div>
-        <div class="toast-content">
-          <h1 class="toast-headline">User group changed</h1>
-        </div>
-        <div class="toast-close"></div>
-      </div>
-
-      <!--### Toast : Text only ###-->
-
-      <div class="toast toast--success toast--temporary toast--permanent">
-        <div class="toast-content">
-          <h1 class="toast-headline">User group changed</h1>
-        </div>
-        <div class="toast-close"></div>
-      </div>
-
-
 
     </div>
 

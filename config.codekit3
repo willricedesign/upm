@@ -51,6 +51,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/app\/images\/icon-close-white.png": {
+		"ft": 32768,
+		"iS": 959,
+		"oA": 0,
+		"oAP": "\/dist\/images\/icon-close-white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/app\/images\/icon-close.png": {
 		"ft": 32768,
 		"iS": 1384,
@@ -88,6 +99,17 @@
 		"iS": 738,
 		"oA": 0,
 		"oAP": "\/dist\/images\/icon-courses.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/images\/icon-danger.png": {
+		"ft": 32768,
+		"iS": 1613,
+		"oA": 0,
+		"oAP": "\/dist\/images\/icon-danger.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -187,6 +209,39 @@
 		"iS": 4863,
 		"oA": 0,
 		"oAP": "\/dist\/images\/udemy-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/images\/udemy-mockup-clp.png": {
+		"ft": 32768,
+		"iS": 706286,
+		"oA": 0,
+		"oAP": "\/dist\/images\/udemy-mockup-clp.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/images\/udemy-mockup-instructor.png": {
+		"ft": 32768,
+		"iS": 337526,
+		"oA": 0,
+		"oAP": "\/dist\/images\/udemy-mockup-instructor.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/app\/images\/udemy-mockup-player.png": {
+		"ft": 32768,
+		"iS": 1158022,
+		"oA": 0,
+		"oAP": "\/dist\/images\/udemy-mockup-player.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,

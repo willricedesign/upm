@@ -1,72 +1,84 @@
-const sideNavContainer = document.querySelector('.sidenav-container');
-const sideNav = document.querySelector('.sidenav');
-const logoType = document.querySelector('.logo-type');
-const textLinks = [...document.getElementsByClassName('link-text')];
-const primaryLinks = [...document.getElementsByClassName('sidenav-primary-link')]
-const secondaryNav = document.querySelector('.secondary-sidenav');
+//onst sideNavContainer = document.querySelector('.sidenav-container');
+const udemyMockup = document.querySelector('.udemy-mockup');
+const udemyBackgrounds = ['udemy-mockup--home','udemy-mockup--clp','udemy-mockup--player', 'udemy-mockup--instructor' ]
+
+const protoBackground = document.querySelector('.proto-button-bg');
+const protoCompact = document.querySelector('.proto-button-compact');
+const protoCreate = document.querySelector('.proto-button-create');
+const protoShowAll = document.querySelector('.proto-button-show');
+
+const cookieClose = document.querySelector('.cookie-message-close');
+const cookieMessage = document.querySelector('.cookie-message');
+const toastList = [...document.getElementsByClassName('toast')];
+const toastContainer = document.querySelector('.toast-container');
 
 
-// Mouse Enter
-sideNav.addEventListener('mouseenter', function() {
+//====== Prototype settings and toggles
 
-  // Open the side nav
-  sideNav.classList.add('open');
+//Initiate prototype by revealing toast
+toastList[0].classList.remove('toast--removed');
+setTimeout(function() {
+  toastList[0].classList.toggle('toast--hidden');
+}, 400);
 
-  // Wait until nav is open, then remove 'display: none'
+
+// Toggle compact mode
+
+protoCompact.addEventListener('click', function() {
+  toastContainer.classList.toggle('toast-variant--compact');
+});
+
+// Cycle prototype background
+let bgCount = 0;
+protoBackground.addEventListener('click', function() {
+  udemyMockup.classList.remove(udemyBackgrounds[bgCount]);
+  bgCount++;
+  udemyMockup.classList.add(udemyBackgrounds[bgCount]);
+  if (bgCount === udemyBackgrounds.length) {
+    bgCount = 0;
+    console.log('true');
+  }
+});
+
+// Show / hide first toast into page
+
+protoCreate.addEventListener('click', function() {
+  toastList[0].classList.remove('toast--removed');
   setTimeout(function() {
-    logoType.classList.remove('display-none');
-    textLinks.forEach(function(e) {
-      e.classList.remove('display-none');
-    });
-  }, 200);
+    toastList[0].classList.toggle('toast--hidden');
+  }, 10);
+});
 
-
-  // Wait for display:none to be removed...
-  setTimeout(function() {
-    logoType.classList.remove('hidden');
-    //Then animate the opacity of each text line, with a delay
-    textLinks.forEach(function(e, i) {
+// Show all toasts
+protoShowAll.addEventListener('click', function() {
+  toastList.forEach(function(e, i) {
+    setTimeout(function() {
+      e.classList.remove('toast--removed');
       setTimeout(function() {
-        e.classList.remove('hidden');
-        i++;
-      }, i * 40);
-    });
-  }, 200);
-
-});
-
-// Mouse Leave
-sideNav.addEventListener('mouseleave', function() {
-  // Animate each link to 0 opacity at the same time
-  logoType.classList.add('hidden');
-  textLinks.forEach(function(e) {
-    e.classList.add('hidden');
+        e.classList.remove('toast--hidden');
+      }, 40);
+      i++;
+    }, i * 50);
   });
-
-  // Then add display:none to each
-  setTimeout(function() {
-    logoType.classList.add('display-none');
-    textLinks.forEach(function(e) {
-      e.classList.add('display-none');
-    });
-  }, 25);
-
-  // Then animate the sidenav closed
-  setTimeout(function() {
-    sideNav.classList.remove('open');
-  }, 100);
-
 });
 
-// Swap active primary link and hide secondary nav
 
-primaryLinks.forEach(function(e) {
+//====== Product Component Scripts
+
+// Dismiss toast
+
+toastList.forEach(function(e) {
   e.addEventListener('click', function() {
-    primaryLinks.forEach(function(l) {
-      l.classList.remove('primary-active');
-    });
-    e.classList.add('primary-active');
-    secondaryNav.classList.toggle('secondary-hidden');
-    sideNavContainer.classList.toggle('sidenav-container-expanded');
+    // Add class for animation
+    e.classList.add('toast--hidden');
+    setTimeout(function() {
+      // Wait 400ms, then remove toast from UI
+      e.classList.add('toast--removed');
+    }, 400);
   });
+});
+
+// Close cookie message
+cookieClose.addEventListener('click', function() {
+  cookieMessage.classList.add('cookie-message--hidden');
 });
